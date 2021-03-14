@@ -1,0 +1,46 @@
+/* Main Logo */
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--blue-color);
+  text-decoration: none;
+
+  &--top {
+    margin-right: 93px;
+    padding: 13px 0;
+
+    @include transition(text-shadow);
+
+    &:hover,
+    &:focus {
+      text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.26);
+    }
+  }
+
+  &--bottom {
+    display: block;
+    margin-bottom: 20px;
+
+    @include transition(text-shadow);
+
+    &:hover,
+    &:focus {
+      text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.12),
+        0px 4px 4px rgba(255, 255, 255, 0.06),
+        1px 4px 6px rgba(255, 255, 255, 0.26);
+    }
+  }
+
+  &__subtext--top {
+    color: var(--top-logo-subtext);
+  }
+
+  &__subtext--bottom {
+    color: var(--white-text-color-1);
+  }
+}
